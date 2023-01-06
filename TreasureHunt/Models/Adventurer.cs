@@ -38,12 +38,12 @@ public record Adventurer
         set => _position = value ?? throw new ArgumentNullException(nameof(value));
     }
 
-    private Orientation Orientation { get; set; }
+    public Orientation Orientation { get; set; }
 
-    private uint NbTreasures { get; set; }
+    public uint NbTreasures { get; set; }
 
-    private string Name { get; }
+    public string Name { get; }
 
-    private Queue<char> Instructions { get; }
-
+    public Queue<char> Instructions { get; }
+    
 };

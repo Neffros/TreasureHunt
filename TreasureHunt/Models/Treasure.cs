@@ -2,7 +2,7 @@
 
 public record Treasure
 {
-    private Position Position { get; }
+    public Position Position { get; }
 
     public Treasure(Position position)
     {
@@ -13,5 +13,4 @@ public record Treasure
     {
         Position = new Position(x, y);
     }
-    
 }
